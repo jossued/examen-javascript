@@ -9,19 +9,34 @@ module.exports = {
 
   attributes: {
 
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+    chasis: {
+      type: 'number',
+      columnType: 'int'
+    },
+    nombreMarca:{
+      type: 'string'
+    },
+    colorUno:{
+      type: 'string'
+    },
+    colorDos:{
+      type: 'string'
+    },
+    nombreModelo:{
+      type: 'string'
+    },
+    anio:{
+      type: 'number',
+      columnType: 'int'
+    },
+    idConductor:{
+      model: 'Conductor'
+    },
+    eventosPorAuto:{
+      collection: 'EventoPorAuto',
+      via: 'idAuto'
+    }
 
-
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
   },
 
